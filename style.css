@@ -190,17 +190,22 @@ svg {
 .search_area{
     left: 77px;
     right: 24px;
-    color: #999;
     font-size: 14px;
     height: 20px;
     line-height: 20px;
     overflow: hidden;
-    pointer-events: none;
     position: absolute;
     text-overflow: ellipsis;
     top: 13px;
     white-space: nowrap;
     z-index: 100;
+}
+.search_area input{
+    color: rgb(74, 74, 74);
+    width: 100%;
+}
+.search_area input::placeholder {
+    color: #999;
 }
 .search_label{
     left: 12px;
@@ -232,7 +237,7 @@ svg {
     pointer-events: auto;
 }
 .contacts{
-    height: 100vh;
+    height: calc(100vh - 108px);
     margin-top: -1px;
     position: relative;
     overflow: auto;
@@ -686,13 +691,15 @@ svg {
 }
 .f_textarea_text{
     left: 2px;
-    color: #999;
+    color: rgb(74, 74, 74);
     font-size: 15px;
     line-height: 20px;
-    pointer-events: none;
     position: absolute;
     z-index: 2;
-    user-select: none;
+    width: 100%;
+}
+.f_textarea_text::placeholder {
+    color: #999;
 }
 .f_sendbutton_inner{
     cursor: pointer;
